@@ -4,6 +4,7 @@ numbers = [4, 8, 15, 16, 23, 42]
 names = ["Elaine", "George", "Jerry", "Cosmo"]
 booleans = [True, False, True]
 jerry = "Jerry"
+nested_lists = [[4, 8], [15, 16], [23, 42]]
 
 
 # Square every item in a list
@@ -108,3 +109,13 @@ def findString(strings,identifier):
   return is_same
 
 print(findString(names,jerry))
+
+
+# multiply the numbers contained in a nested list
+def multiply(numbers):
+  
+  products = [item1*item2 for (item1, item2) in numbers]
+  
+  return products
+
+print(multiply(nested_lists))
