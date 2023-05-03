@@ -5,7 +5,7 @@ revenue = [200, 400, 650, 800, 850]
 costs = [150, 500, 550, 550, 560]
 
 plt.plot(time, revenue, color = 'yellow', marker = 's')
-plt.plot(time, costs, color = 'purple', marker = 'c')
+plt.plot(time, costs, color = 'purple', marker = '^')
 
 plt.xlabel("time (days)")
 plt.ylabel("money (USD)")
