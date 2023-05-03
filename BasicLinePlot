@@ -4,10 +4,11 @@ time = list(range(5))
 revenue = [200, 400, 650, 800, 850]
 costs = [150, 500, 550, 550, 560]
 
-plt.plot(time, revenue)
-plt.plot(time, costs)
+plt.plot(time, revenue, color = 'yellow', marker = 's')
+plt.plot(time, costs, color = 'purple', marker = 'c')
 
 plt.xlabel("time (days)")
 plt.ylabel("money (USD)")
+plt.title("Revenue and Costs v. Time)
 
 plt.show()
