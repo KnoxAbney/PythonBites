@@ -1,8 +1,13 @@
 from matplotlib import pyplot as plt
 
-days = list(range(7))
-money_spent = [10,12,12,10,14,22,24]
+time = list(range(5))
+revenue = [200, 400, 650, 800, 850]
+costs = [150, 500, 550, 550, 560]
 
-plt.plot(days, money_spent)
+plt.plot(time, revenue)
+plt.plot(time, costs)
+
+plt.xlabel("time (days)")
+plt.ylabel("money (USD)")
 
 plt.show()
