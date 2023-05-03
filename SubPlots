@@ -1,0 +1,28 @@
+from matplotlib import pyplot as plt
+
+x = range(7)
+straight_line = [0, 1, 2, 3, 4, 5, 6]
+parabola = [0, 1, 4, 9, 16, 25, 36]
+cubic = [0, 1, 8, 27, 64, 125, 216]
+
+plt.subplot(2,1,1)
+plt.plot(x, straight_line, color = 'cyan', marker = 'o', linestyle = 'dashdot')
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.title("First Power")
+
+plt.subplot(2,2,3)
+plt.plot(x, parabola, color = 'purple', marker = 's', linestyle = '--')
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.title("Second Power")
+
+plt.subplot(2,2,4)
+plt.plot(x, cubic, color = 'yellow', marker = '^')
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.title("Third Power")
+
+plt.subplots_adjust(wspace = 0.45, hspace = 0.6, bottom = 0.2)
+
+plt.show()
